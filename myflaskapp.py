@@ -17,7 +17,7 @@ import users.s2a.g100.scrum2_task1
 
 #g9
 import users.s2b.g9.task0
-import users.s2b.g9.task40323250
+import users.s2b.g9.task50
 
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
@@ -318,21 +318,15 @@ def download(filename):
 
 # 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
 # 以下依照班別與組別次序註冊藍圖
-# 二甲
 # 註冊 ag100 的 scrum1_task1.py 檔案中的 scrum1_task1 藍圖
 app.register_blueprint(users.s2a.g100.scrum1_task1.scrum1_task1)
 # 註冊 ag100 的 scrum2_task1.py 檔案中的 scrum2_task1 藍圖
 app.register_blueprint(users.s2a.g100.scrum2_task1.scrum2_task1)
 
-# 二乙
-#g1
 
-
-# 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
-
-app.register_blueprint(users.s2b.g9.task0.bg9)
 #g9
-app.register_blueprint(users.s2b.g9.task40323250.task40323250)
+app.register_blueprint(users.s2b.g9.task0.bg9)
+app.register_blueprint(users.s2b.g9.task50.task50)
 
 
 if __name__ == "__main__":
